@@ -1,9 +1,7 @@
 @import "./header.css";
 @import "./global.css";
+@import "./banner.css";
 
-.banner {
-  background: #f0f0f0;
-}
 .button-link-banner {
   display: inline-flex;
   padding: 16px 40px;
