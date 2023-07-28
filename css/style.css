@@ -2,18 +2,7 @@
 @import "./global.css";
 @import "./banner.css";
 
-.button-link-banner {
-  display: inline-flex;
-  padding: 16px 40px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
 
-  text-decoration: none;
-  border-radius: 30px;
-  border: 2px solid #0f0f0f;
-  background: rgba(168, 174, 182, 0);
-}
 
 .info-site {
   background: #f0f0f0;
