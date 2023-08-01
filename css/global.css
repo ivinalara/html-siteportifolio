@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+  font-family: "Playfair Display SC", Arial, sans-serif;
+  color: #1f232b;
+}
+/*Nunito = Playfair Display SC
+A nunito não ta carregando
+*/
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}

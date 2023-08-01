@@ -1,0 +1,35 @@
+@import "./header.css";
+@import "./global.css";
+@import "./banner.css";
+
+
+
+.info-site {
+  background: #f0f0f0;
+}
+.button-link-info {
+  display: inline-flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  background: #0f0f0f;
+}
+
+.info-ppgte-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.info-ppgte-box {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 4px;
+}
