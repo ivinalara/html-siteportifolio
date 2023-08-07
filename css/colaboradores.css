@@ -3,6 +3,8 @@
 
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0 auto;
+    width: 75%;
   }
   
   /* Estilos para a classe que envolve as imagens */
@@ -22,7 +24,7 @@
   
   /* Estilos para a linha com degradê */
 .line {
-    width: 1140px; /* Largura da linha */
+    width: 100%; /* Largura da linha */
     height: 3px; /* Altura da linha */
     background-image: linear-gradient(to right, #2260FFFF, #2260FF00,#2260FFFF );
     margin: 0 auto;
