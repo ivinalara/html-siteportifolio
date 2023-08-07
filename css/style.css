@@ -1,7 +1,7 @@
 @import "./header.css";
 @import "./global.css";
 @import "./banner.css";
-
+@import "./ppgteinfo.css";
 
 
 .info-site {
@@ -20,16 +20,3 @@
   background: #0f0f0f;
 }
 
-.info-ppgte-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.info-ppgte-box {
-  background: #f7f7f7;
-  border: 1px solid #e7e7e7;
-  padding: 20px;
-  border-radius: 4px;
-}
