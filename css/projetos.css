@@ -1,0 +1,45 @@
+/*Toda a seção de pesquisa*/
+.pesquisa {
+  background: #0000ff00;
+  color: #1F232B;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 50px;
+}
+
+/*Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL*/
+.pesquisa h3 {
+  color: #2260ff;
+  text-transform: uppercase;
+  font-weight: 500; /*Verificar e ajeitar (!!!)*/
+
+  padding-bottom: 1.5rem; /*Espaçamento padrão entre subtitulo e titulo*/
+}
+.pesquisa h2 {
+  padding-bottom: 24px;
+}
+
+.pesquisa-filtro-box {
+  background: #0000ff05;
+  padding: 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #2260ff;
+  border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
+  position: relative;
+}
+
+#filtro-ano {
+  background: transparent;
+  border: 2px solid #2260ff;
+  padding: 8px;
+  border-radius: 4px;
+  color: #2260ff;
+  font-weight: bold;
+}
+/*
+Fazer configuração geral para h3 e h2 vai ficar mais fácil (!!!)
+- Configurar fundo das opções da seleção (esta branco, tem que ficar na cor do fundo (!!!))
+*/
