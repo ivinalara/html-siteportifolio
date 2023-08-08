@@ -1,0 +1,32 @@
+/* Estilos para a div que centraliza o conteúdo */
+.center-container {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 75%;
+  }
+  
+  /* Estilos para a classe que envolve as imagens */
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as imagens */
+    margin-top: 30px; /* Espaçamento acima do container de imagens */
+    margin-bottom: 30px; /* Espaçamento abaixo do container de imagens */
+    align-items: center;
+  }
+  
+  /* Estilos para as imagens */
+  .image {
+    padding: 30px;
+    
+  }
+  
+  /* Estilos para a linha com degradê */
+.line {
+    width: 100%; /* Largura da linha */
+    height: 3px; /* Altura da linha */
+    background-image: linear-gradient(to right, #2260FFFF, #2260FF00,#2260FFFF );
+    margin: 0 auto;
+  }
+  
