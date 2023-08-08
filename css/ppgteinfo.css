@@ -1,0 +1,72 @@
+
+.info-ppgte-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 24px;
+}
+
+.info-ppgte-box {
+  background: transparent;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 13px,
+        transparent 13px
+      )
+      0% 0%/15px 15px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px)
+      100% 0%/15px 15px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px)
+      0% 100%/15px 15px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px)
+      100% 100%/15px 15px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 4px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 4px) no-repeat,
+    linear-gradient(
+        150deg,
+        transparent 8%,
+        #2260ff 45%,
+        #2260ff 61%,
+        transparent 94%
+      )
+      50% 144%;
+  border-radius: 15px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.info-ppgte {
+  max-width: 1200px;
+  padding: 0px 50px;
+  display: block;
+  align-content: center;
+  margin: 0 auto;
+  color: #1f232b;
+}
+.info-ppgte-grid h4 {
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.info-ppgte h3 {
+  color: #2260ff;
+  padding-bottom: 1.5rem;
+}
+.info-ppgte h2 {
+  padding-bottom: 36px;
+}
+.info-ppgte a {
+  color: #2260ff;
+}
+.info-ppgte-box img {
+  padding-bottom: 1.5rem;
+}
+
+.info-ppgte-box p {
+  line-height: 28px;
+}
+/*
+ver se tem que espaçar fonte de texto dps de por nunito
+*/
