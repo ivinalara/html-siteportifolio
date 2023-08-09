@@ -1,45 +1,112 @@
 /*Toda a seção de pesquisa*/
 .pesquisa {
   background: #0000ff00;
-  color: #1F232B;
+  color: #1f232b;
 
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 50px;
 }
 
-/*Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL*/
+/*
+TITULOS E SUBTÍTULOS
+Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL
+*/
 .pesquisa h3 {
   color: #2260ff;
   text-transform: uppercase;
-  font-weight: 500; /*Verificar e ajeitar (!!!)*/
+  font-weight: 600; /*Verificar e ajeitar (!!!)*/
 
   padding-bottom: 1.5rem; /*Espaçamento padrão entre subtitulo e titulo*/
 }
 .pesquisa h2 {
   padding-bottom: 24px;
+  font-weight: 800;
 }
 
+/*CAIXA DE FILTROS*/
 .pesquisa-filtro-box {
-  background: #0000ff05;
-  padding: 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
+  background: transparent;
+  padding: 1.1rem 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid #2260ff;
   border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
   position: relative;
+  margin-bottom: 24px;
 }
 
 #filtro-ano {
-  background: transparent;
-  border: 2px solid #2260ff;
-  padding: 8px;
-  border-radius: 4px;
+  background: #F4F6FA;
   color: #2260ff;
   font-weight: bold;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+
+  border: 2px solid #2260ff;
+  border-radius: 4px;
+  margin-left: 8px;
+  padding: 8px 12px;
 }
+
+/*BOX DE CARDS*/
+.pesquisa-projetos-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pesquisa-projetos-card {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 3fr;
+  align-items: end;
+  padding: 1.5rem;
+
+  background: #fcfdff;
+  border: 2px solid #e3e7ed;
+  border-radius: 10px;
+  box-shadow: 0px 4px 29px 0px rgba(13, 12, 17, 0.09);
+}
+
+.pesquisa-projetos-card img{
+  grid-row: 1/4;
+  
+  border-radius: 5px;
+  border: 1px solid #e3e7ed;
+}
+
+.pesquisa-projetos-card h6 {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  font-size: 14px;
+  font-weight: normal;
+
+  color: #585e68;
+}
+.pesquisa-projetos-card h5 {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: #585e68;
+}
+
+.card-resumo {
+  grid-column: 1/-1;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+  
+  color: #585e68;
+}
+
+
 /*
+
 Fazer configuração geral para h3 e h2 vai ficar mais fácil (!!!)
 - Configurar fundo das opções da seleção (esta branco, tem que ficar na cor do fundo (!!!))
 */
