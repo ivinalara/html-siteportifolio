@@ -1,6 +1,8 @@
 body {
   margin: 0px;
-  font-family: "Playfair Display SC", Arial, sans-serif;
+  font-family: "Nunito", sans-serif, Arial;
+
+  background: #F4F6FA;
   color: #1f232b;
 }
 /*Nunito = Playfair Display SC
@@ -10,7 +12,11 @@ h1,
 h2,
 h3,
 h4,
-p {
+h5,
+h6,
+p 
+,
+a{
   margin: 0px;
 }
 
