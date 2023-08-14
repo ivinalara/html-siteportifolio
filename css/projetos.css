@@ -62,7 +62,7 @@ Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL
   gap: 16px;
   grid-template-columns: 1fr 3fr;
   align-items: end;
-  padding: 1.5rem;
+  padding: 28px;
 
   background: #fcfdff;
   border: 2px solid #e3e7ed;
@@ -72,7 +72,12 @@ Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL
 
 .pesquisa-projetos-card img{
   grid-row: 1/4;
-  
+  width: 100%;
+  height: 100%;
+  max-width: 130px;
+  max-height: 172px;
+  min-width: 115px;
+  object-fit: cover;
   border-radius: 5px;
   border: 1px solid #e3e7ed;
 }
