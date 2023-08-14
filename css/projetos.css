@@ -1,6 +1,4 @@
-/*Toda a seção de pesquisa*/
-.pesquisa {
-  background: #0000ff00;
+.projetos-teses {
   color: #1f232b;
 
   max-width: 1200px;
@@ -8,110 +6,101 @@
   padding: 80px 50px;
 }
 
-/*
-TITULOS E SUBTÍTULOS
-Estilo do subtítulo, que dps vai para geral (!!!)  IR PARA GERAL
-*/
-.pesquisa h3 {
+/*TITULOS E SUBTÍTULOS*/
+.projetos-teses h3 {
   color: #2260ff;
   text-transform: uppercase;
-  font-weight: 600; /*Verificar e ajeitar (!!!)*/
+  font-weight: 700;
 
-  padding-bottom: 1.5rem; /*Espaçamento padrão entre subtitulo e titulo*/
+  padding-bottom: 1.5rem; /*Espaçamento PADRÃO entre subtitulo e titulo*/
 }
-.pesquisa h2 {
-  padding-bottom: 24px;
+
+.projetos-teses h2 {
   font-weight: 800;
+  padding-bottom: 24px;
 }
 
 /*CAIXA DE FILTROS*/
-.pesquisa-filtro-box {
+.projetos-filtro-box {
   background: transparent;
-  padding: 1.1rem 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 2px solid #2260ff;
   border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
+  display: flex;
+  justify-content: space-between;
+
   position: relative;
+  align-items: center;
+  padding: 1.1rem 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
   margin-bottom: 24px;
 }
 
 #filtro-ano {
-  background: #F4F6FA;
+  background: #f4f6fa;
   color: #2260ff;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   font-family: "Nunito", sans-serif;
-
   border: 2px solid #2260ff;
   border-radius: 4px;
-  margin-left: 8px;
+
   padding: 8px 12px;
+  margin-left: 8px;
 }
 
 /*BOX DE CARDS*/
-.pesquisa-projetos-box {
+.projetos-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.pesquisa-projetos-card {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 1fr 3fr;
-  align-items: end;
-  padding: 28px;
-
+.projetos-card {
   background: #fcfdff;
   border: 2px solid #e3e7ed;
   border-radius: 10px;
   box-shadow: 0px 4px 29px 0px rgba(13, 12, 17, 0.09);
+  display: grid;
+
+  gap: 16px;
+  grid-template-columns: 1fr 3fr;
+  align-items: end;
+  padding: 28px;
 }
 
-.pesquisa-projetos-card img{
+.projetos-card img {
+  border-radius: 5px;
+  border: 1px solid #e3e7ed;
   grid-row: 1/4;
+
   width: 100%;
   height: 100%;
   max-width: 130px;
   max-height: 172px;
   min-width: 115px;
   object-fit: cover;
-  border-radius: 5px;
-  border: 1px solid #e3e7ed;
 }
 
-.pesquisa-projetos-card h6 {
+.projetos-card h6 {
+  color: #585e68;
   grid-column: 2/-1;
   grid-row: 2/3;
   font-size: 14px;
   font-weight: normal;
-
-  color: #585e68;
 }
-.pesquisa-projetos-card h5 {
+
+.projetos-card h5 {
+  color: #585e68;
   grid-column: 2/-1;
   grid-row: 3/4;
   font-size: 16px;
-  font-weight: bold;
   line-height: 24px;
-
-  color: #585e68;
+  font-weight: bold;
 }
 
 .card-resumo {
-  grid-column: 1/-1;
-  font-weight: normal;
-  line-height: 24px;
-  font-size: 14px;
-  
   color: #585e68;
+  grid-column: 1/-1;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
 }
-
-
-/*
-
-Fazer configuração geral para h3 e h2 vai ficar mais fácil (!!!)
-- Configurar fundo das opções da seleção (esta branco, tem que ficar na cor do fundo (!!!))
-*/
