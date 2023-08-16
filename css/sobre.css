@@ -1,0 +1,70 @@
+/* Estilos para o container de sobreposição */
+.overlay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilos para o elemento da esquerda */
+.left-element {
+  position: relative;
+  
+}
+
+/* Estilos para a imagem de background */
+.background-image img {
+  height: 100%;
+  width: 100%;
+  padding-left: 20%;
+  z-index: 1; /* Coloca a imagem da direita sobre a imagem da esquerda */
+}
+
+/* Estilos para o texto sobreposto */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1f232b;
+  padding: 20px;
+  text-align: left;
+  max-height: 100%;
+  font-size: 18px;
+  overflow: hidden; /* Garante que o overflow seja oculto para não exibir partes da imagem da direita que ficam fora do contêiner */
+
+}
+
+/* Estilos para as sessões de texto */
+.section {
+  margin-bottom: 20px;
+}
+.sobre {
+  font-weight: bold;
+}
+.blue-text {
+  color: blue;
+}
+
+/* Estilos para o botão */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* Estilos para o elemento da direita */
+.right-element {
+  margin-left: -25px; /* Espaçamento entre os elementos */
+  position: relative;
+}
+
+/* Estilos para a imagem simples */
+.right-element img {
+  width: 100%; /* Largura da imagem */
+  height: auto;
+  z-index: 2; /* Coloca a imagem da direita sobre a imagem da esquerda */
+}
+
