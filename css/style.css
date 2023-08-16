@@ -3,7 +3,9 @@
 @import "./banner.css";
 @import "./ppgteinfo.css";
 @import "./colaboradores.css";
+@import "./sobre.css';
 @import "./projetos.css";
+
 
 .info-site {
   background: #f4f6fa;
