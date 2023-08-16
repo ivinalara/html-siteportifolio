@@ -1,0 +1,106 @@
+.projetos-teses {
+  color: #1f232b;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 50px;
+}
+
+/*TITULOS E SUBTÍTULOS*/
+.projetos-teses h3 {
+  color: #2260ff;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  padding-bottom: 1.5rem; /*Espaçamento PADRÃO entre subtitulo e titulo*/
+}
+
+.projetos-teses h2 {
+  font-weight: 800;
+  padding-bottom: 24px;
+}
+
+/*CAIXA DE FILTROS*/
+.projetos-filtro-box {
+  background: transparent;
+  border: 2px solid #2260ff;
+  border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  align-items: center;
+  padding: 1.1rem 1.5rem; /*Espaçamento ESPECÍFICO entre esse titulo e o filtro*/
+  margin-bottom: 24px;
+}
+
+#filtro-ano {
+  background: #f4f6fa;
+  color: #2260ff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border: 2px solid #2260ff;
+  border-radius: 4px;
+
+  padding: 8px 12px;
+  margin-left: 8px;
+}
+
+/*BOX DE CARDS*/
+.projetos-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.projetos-card {
+  background: #fcfdff;
+  border: 2px solid #e3e7ed;
+  border-radius: 10px;
+  box-shadow: 0px 4px 29px 0px rgba(13, 12, 17, 0.09);
+  display: grid;
+
+  gap: 16px;
+  grid-template-columns: 1fr 3fr;
+  align-items: end;
+  padding: 28px;
+}
+
+.projetos-card img {
+  border-radius: 5px;
+  border: 1px solid #e3e7ed;
+  grid-row: 1/4;
+
+  width: 100%;
+  height: 100%;
+  max-width: 130px;
+  max-height: 172px;
+  min-width: 115px;
+  object-fit: cover;
+}
+
+.projetos-card h6 {
+  color: #585e68;
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.projetos-card h5 {
+  color: #585e68;
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.card-resumo {
+  color: #585e68;
+  grid-column: 1/-1;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
