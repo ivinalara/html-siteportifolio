@@ -14,8 +14,8 @@
 
 /* Estilos para a imagem de background */
 .background-image img {
-  height: 100%;
-  width: 100%;
+  height: 85%;
+  width: 85%;
   padding-left: 20%;
   z-index: 1; /* Coloca a imagem da direita sobre a imagem da esquerda */
 }
@@ -30,7 +30,6 @@
   padding: 20px;
   text-align: left;
   max-height: 100%;
-  font-size: 18px;
   overflow: hidden; /* Garante que o overflow seja oculto para não exibir partes da imagem da direita que ficam fora do contêiner */
 
 }
@@ -43,21 +42,23 @@
   font-weight: bold;
 }
 .blue-text {
-  color: blue;
+  color: #2260FF;
 }
 
 /* Estilos para o botão */
 .button {
+  font-weight:normal;
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 /* Estilos para o elemento da direita */
 .right-element {
-  margin-left: -25px; /* Espaçamento entre os elementos */
+  margin-top: 2vh;
+  margin-left: -10vw; /* Espaçamento entre os elementos */
   position: relative;
 }
 
@@ -67,4 +68,7 @@
   height: auto;
   z-index: 2; /* Coloca a imagem da direita sobre a imagem da esquerda */
 }
+.textBlock {
+  overflow:hidden;
 
+}
