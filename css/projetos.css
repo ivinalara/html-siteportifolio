@@ -23,7 +23,7 @@
 /*CAIXA DE FILTROS*/
 .projetos-filtro-box {
   background: transparent;
-  border: 2px solid #2260ff;
+ border: 2px solid #2260ff;
   border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
   display: flex;
   justify-content: space-between;
