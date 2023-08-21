@@ -1,9 +1,11 @@
 .banner-bg {
-  width: 100%;
   height: 500px;
+  width: 100%;
+  margin-top: 60;
+
   background: url("../img/banner-site.png") no-repeat center;
   background-size: cover;
-  margin-top: 60;
+
   display: block;
   align-content: center;
 }
@@ -13,39 +15,38 @@
   margin: 0 auto;
   padding: 0px 50px;
   display: flex;
-  align-items: center;
-  background: #00ff0000;
+  flex-direction: column;
+  justify-content: center;
 }
-.banner {
+.banner-conteudo {
   display: inline-grid;
   max-width: 500px;
-  background: #00ff0000;
   color: #f4f6fa;
-  gap: 24px;
 }
 
-.banner h1 {
-  font-size: 2.6rem;
-  color: #f4f6fa;
+.banner-conteudo h1 {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  padding-bottom: 16px;
 }
-.banner p {
-  font-size: 1.2rem;
-  line-height: 1.33;
-  padding-bottom: 0px;
+.banner-conteudo p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  padding-bottom: 20px;
 }
-.banner a {
+.button-link-banner { /*Ajustar font-weight*/
   place-self: start;
   text-transform: uppercase;
   font-size: 1rem;
   background: transparent;
 }
 
-.banner a:hover {
+.button-link-banner:hover {
   background: #e2faff15;
+  border: 3px solid #f4f6fa;
 }
 
 .button-link-banner {
-  display: inline-flex;
   padding: 16px 40px;
   justify-content: center;
   align-items: center;
@@ -54,6 +55,5 @@
   color: #f4f6fa;
   text-decoration: none;
   border-radius: 30px;
-  border: 2px solid #f4f6fa;
-  background: rgba(168, 174, 182, 0);
+  border: 3px solid #f4f6fa85;
 }
