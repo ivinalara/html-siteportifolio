@@ -1,4 +1,4 @@
-.header { /*REVER PADRÃO DE ORGANIZAÇÃO DO CÓDIGO*/
+.header { 
   max-width: 1200px; /*tamanho max content*/
   padding: 10px 50px; /*vert | horiz - o horizontal dá a margem para que os itens não enconstem na borda do site */
   margin: 0 auto;
