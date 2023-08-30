@@ -9,21 +9,17 @@
 /*TITULOS E SUBTÍTULOS*/
 .projetos-teses h3 {
   color: #2260ff;
-  text-transform: uppercase;
-  font-weight: 700;
-
   padding-bottom: 1.5rem; /*Espaçamento PADRÃO entre subtitulo e titulo*/
 }
 
 .projetos-teses h2 {
-  font-weight: 800;
   padding-bottom: 24px;
 }
 
 /*CAIXA DE FILTROS*/
 .projetos-filtro-box {
   background: transparent;
- border: 2px solid #2260ff;
+  border: 2px solid #2260ff;
   border-radius: 10px; /*Arredondamento ESPECÍFICO para esta caixa*/
   display: flex;
   justify-content: space-between;
@@ -84,8 +80,6 @@
   color: #585e68;
   grid-column: 2/-1;
   grid-row: 2/3;
-  font-size: 14px;
-  font-weight: normal;
 }
 
 .projetos-card h5 {

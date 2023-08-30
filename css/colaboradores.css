@@ -1,32 +1,35 @@
-/* Estilos para a div que centraliza o conteúdo */
-.center-container {
+/* Estilos que centraliza o conteúdo */
+.colaborador {
+  max-width: 1200px;
+  padding: 44px 50px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    width: 75%;
+/* Estilos para a linha com degradê */
+.colaborador-linha {
+  width: 100%; /* Largura da linha */
+  height: 3px; /* Altura da linha */
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #2260ffff, #2260ff00, #2260ffff);
+}
+
+/* Estilos que envolve as imagens */
+.colaborador-container {
+  display: flex;
+  justify-content: space-around; /* Espaço entre as imagens e margins*/
+  align-items: center;
+  padding: 20px 0px;
+}
+
+/* Estilos para as imagens */
+.colaborador-image {
+  padding: 20px 16px;
+}
+
+@media (max-width: 400px) {
+  .colaborador-container {
+    justify-content: flex-start;
+    flex-direction: column;
   }
-  
-  /* Estilos para a classe que envolve as imagens */
-  .image-container {
-    display: flex;
-    justify-content: space-between; /* Espaço entre as imagens */
-    margin-top: 30px; /* Espaçamento acima do container de imagens */
-    margin-bottom: 30px; /* Espaçamento abaixo do container de imagens */
-    align-items: center;
-  }
-  
-  /* Estilos para as imagens */
-  .image {
-    padding: 30px;
-    
-  }
-  
-  /* Estilos para a linha com degradê */
-.line {
-    width: 100%; /* Largura da linha */
-    height: 3px; /* Altura da linha */
-    background-image: linear-gradient(to right, #2260FFFF, #2260FF00,#2260FFFF );
-    margin: 0 auto;
-  }
-  
+}
