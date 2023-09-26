@@ -48,17 +48,17 @@
 }
 .info-ppgte-grid h4 {
   padding-bottom: 1.5rem;
-  font-size: 1.2rem;
 }
 .info-ppgte h3 {
-  color: #2260ff;
-  padding-bottom: 1.5rem;
+  color: #2260ff; /*blue-txt*/
+  padding-bottom: 20px;
 }
 .info-ppgte h2 {
   padding-bottom: 36px;
 }
 .info-ppgte a {
   color: #2260ff;
+  font-weight: 600;
 }
 .info-ppgte-box img {
   padding-bottom: 1.5rem;
@@ -67,6 +67,4 @@
 .info-ppgte-box p {
   line-height: 28px;
 }
-/*
-ver se tem que espaçar fonte de texto dps de por nunito
-*/
+

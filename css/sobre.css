@@ -3,13 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 /* Estilos para o elemento da esquerda */
 .left-element {
   position: relative;
-  
 }
 
 /* Estilos para a imagem de background */
@@ -27,7 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #1f232b;
-  padding: 20px;
+  padding: 20px; /*AJEITAR PADDING*/
   text-align: left;
   max-height: 100%;
   overflow: hidden; /* Garante que o overflow seja oculto para não exibir partes da imagem da direita que ficam fora do contêiner */
@@ -35,13 +33,10 @@
 }
 
 /* Estilos para as sessões de texto */
-.section {
+.section { /*margin*/
   margin-bottom: 20px;
 }
-.sobre {
-  font-weight: bold;
-}
-.blue-text {
+.blue-text { /*blue-txt*/
   color: #2260FF;
 }
 
@@ -54,6 +49,7 @@
   color: white;
   text-decoration: none;
   border-radius: 30px;
+  text-transform: uppercase;
 }
 /* Estilos para o elemento da direita */
 .right-element {

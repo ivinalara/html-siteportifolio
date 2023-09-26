@@ -7,9 +7,43 @@
 @import "./projetos.css";
 @import "./footer.css";
 
-.info-site {
-  background: #f4f6fa;
+h1{
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: 700;
 }
+
+h2{
+  font-size: 1.5;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+h3{
+  font-size: 1.15rem;
+  line-height: 1.38;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4{
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+h6{
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+/* AJEITAR
 .button-link-info {
   display: inline-flex;
   padding: 16px 40px;
@@ -22,3 +56,4 @@
   border-radius: 30px;
   background: #0f0f0f;
 }
+*/
