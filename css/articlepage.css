@@ -1,0 +1,31 @@
+#contpage2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 50px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 400px 1fr;
+}
+
+#contpage2 img {
+  max-width: 400px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+#contpage2 h2 {
+  grid-column: 1/-1;
+}
+
+#contpage2 a {
+  grid-column: 1/2;
+  place-self: center;
+}
+#contpage2 p {
+  grid-column: 2/3;
+
+}
+
+#contpage2 a {/*botão de baixar PDF*/
+  padding: 16px 32px;
+}
