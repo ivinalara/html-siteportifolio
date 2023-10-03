@@ -4,11 +4,11 @@
   padding: 80px 50px;
   display: grid;
   gap: 60px;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 1fr 3fr;
 }
 
-#contpage2 img {
-  max-width: 400px;
+#contpage2 img.capa {
+  max-width: 360px;
   border-radius: 0.625rem;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
 }
@@ -28,4 +28,17 @@
 
 #contpage2 a {/*botão de baixar PDF*/
   padding: 16px 32px;
+}
+
+#imagens-nat {
+  grid-column: 2/-1;
+}
+
+#conteiner-capa-botão {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#conteiner-capa-botão img {
+  margin-bottom: 32px;
 }
