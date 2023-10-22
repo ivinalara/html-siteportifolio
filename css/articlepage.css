@@ -1,0 +1,87 @@
+#contpage2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 60px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 3fr;
+}
+
+#contpage2 img.capa {
+  max-width: 360px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 50, 0.09);
+}
+
+#contpage2 h2 {
+  grid-column: 1/-1;
+}
+
+#contpage2 a {
+  grid-column: 1/2;
+  place-self: center;
+}
+#contpage2 p {
+  grid-column: 2/3;
+
+}
+
+#contpage2 a {/*botão de baixar PDF*/
+  padding: 16px 32px;
+}
+
+#conteiner-capa-botão {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#conteiner-capa-botão img {
+  margin-bottom: 32px;
+}
+
+
+
+/*--- IMAGENS ---*/
+
+
+.galeria {
+  grid-column: 2/-1;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+.galeria { /*conteiner*/
+  padding: 32px;
+  border-radius: 0.5rem;
+  align-items: start;
+  background: #ffffff50;
+  border: 1px solid #E1E6F0 ;
+  
+}
+.galeria img{
+  border: 1px solid #E1E6F0 ;
+}
+
+.galeria-big-img{ /*Container display da imagem maior em destaque*/
+  padding: 10px 20px;
+  
+}
+.galeria-big-img img{
+  height: 440px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.galeria-small-img img{
+  height: 70px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.5;
+
+  width: 70px;
+  object-fit: cover;
+}
+.galeria-small-img img:hover{
+  opacity: 1;
+}
