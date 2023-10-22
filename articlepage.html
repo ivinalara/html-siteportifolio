@@ -5,27 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css" />
-  <title>Biblioteca Digital PPGTE</title>
+  <title>Portal dos Egressos PPGTE</title>
+  <script type="text/javascript" src="./script.js"></script>
 </head>
 
 <body>
-  <!-- navbar -->
+  <!-- navbar > -->
   <header class="header-bg">
     <div class="header">
-      <!-- <img src="./img/logo-site.svg" alt="Biblioteca Digital PPGTE"> -->
-      <a href="" id="logo-site">Biblioteca Digital PPGTE</a>
+      <!-- <img src="./img/logo-site.svg" alt="Portal dos Egressos PPGTE"> -->
+      <a href="./index.html" id="logo-site">Portal dos Egressos PPGTE</a>
       <nav aria-label="primaria">
         <ul class="header-menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <!-- navbar -->
-  <!-- Conteúdo -->
+  <!-- < navbar -->
+  <!-- Conteúdo > -->
   <div id="contpage2">
     <h2>Accessible Interactions 500: Uma proposta de jogo de tabuleiro híbrido inclusivo com realidade aumentada para auxiliar o ensino de química a alunos surdos (por Natália Da Silva)</h2>
     <div id="conteiner-capa-botão">
@@ -36,45 +34,54 @@
       <p><strong>Título:</strong> ACCESSIBLE INTERACTIONS 500:
         UMA PROPOSTA DE JOGO DE TABULEIRO HÍBRIDO INCLUSIVO COM
         REALIDADE AUMENTADA PARA AUXILIAR O ENSINO DE QUÍMICA A ALUNOS SURDOS<br><br>
-        <strong>Autor:</strong> Natália Da Silva Fernandes<br><br>
-        <strong>Orientador:</strong> Windson Viana de Carvalho<br><br>
+        <strong>Autor(a):</strong> Natália Da Silva Fernandes<br><br>
+        <strong>Orientador(a):</strong> Windson Viana de Carvalho<br><br>
         <strong>Publicação:</strong> 14/12/2022<br><br><br>
       </p>
       <p><strong>Resumo:</strong> <br><br>
         O ensino de Química apresenta muitos desafios, pois é uma disciplina considerada pela maioria dos alunos como complexa e abstrata, dificultando sua aprendizagem. No contexto dos alunos surdos, os desafios são ainda maiores, visto que, na grande maioria, as metodologias de ensino aplicadas são pautadas no público ouvinte. Nesse sentido, os jogos acessíveis são ferramentas pedagógicas promissoras para minimizar essa problemática. A literatura comprova que os jogos são capazes de impactar no processo de aprendizagem dos alunos, em razão do aumento do engajamento e por despertarem o interesse em aprender os conteúdos escolares de uma forma mais divertida. Neste contexto, este estudo propõe e analisa a aplicação de um jogo híbrido estendido com Realidade Aumentada (RA) no ensino inclusivo de Química para alunos surdos, que também pode ser utilizado por ouvintes. Na revisão sistemática da literatura realizada durante esta pesquisa, observou-se que existem poucas soluções para o uso de RA para o ensino de Ciências a surdos. A grande maioria dos estudos utiliza a RA para ensinar língua de sinais às pessoas surdas. Busca-se assim contribuir para a inserção de novas metodologias no ensino de Ciências para pessoas surdas e suscitar novas reflexões sobre essa temática. Um estudo de caso aplicando o jogo foi analisado em uma escola pública estadual localizada no município de Fortaleza, Ceará. <br><br></p>
-      <p><strong>Palavras-chave:</strong> Surdos, Aprendizagem, Jogos, Realidade Aumentada, Química.</p>
+      <p><strong>Palavras-chave:</strong> Surdos, Aprendizagem, Jogos, Realidade Aumentada, Química.</p><br><br>
+
+      <!--GALEIRA > -->
+      <h3>Galeria</h3>
     </div>
-    <div id="imagens-nat">
-      <img src="./img/projeto-natalia/img-projeto-nat1.jpg" alt="">
-      <img src="./img/projeto-natalia/img-projeto-nat2.jpg" alt="">
-      <img src="./img/projeto-natalia/img-projeto-nat3.jpg" alt="">
+    <div class="galeria">
+      <div class="galeria-small-img">
+        <img src="./img/projeto-natalia/img-projeto-nat1.jpg" onclick="myFunction(this)">
+        <img src="./img/projeto-natalia/img-projeto-nat2.jpg" onclick="myFunction(this)">
+        <img src="./img/projeto-natalia/img-projeto-nat3.jpg" onclick="myFunction(this)">
+        <img src="./img/projeto-natalia/img-projeto-nat4.jpg" onclick="myFunction(this)">
+        <img src="./img/projeto-natalia/img-projeto-nat5.jpg" onclick="myFunction(this)">
+      </div>
+
+      <div class="galeria-big-img">
+        <img id="big-img-box" src="./img/projeto-natalia/img-projeto-nat1.jpg">
+      </div>
+
     </div>
+    <!-- < GALEIRA-->
   </div>
-  <!-- Conteúdo -->
-  <!-- Footer -->
-  <footer class="footer">
+  <!--< Conteúdo -->
+
+  <!-- Footer > -->
+  <footer class="footer" id="contatos">
     <div class="footer-info">
       <h4 id="footer-titulo-1">PPGTE</h4>
       <p id="footer-descricao">Nosso programa de mestrado oferece as ferramentas e conhecimentos necessários para integrar as tecnologias contemporâneas no ensino e aprendizagem, capacitando você a enfrentar desafios educacionais com soluções inovadoras. Saiba mais no nosso site.</p>
+
       <h4>Conheça mais</h4>
       <ul>
-        <li>
-          <a href="https://ppgte.ufc.br/pt/">Sobre nós</a>
-        </li>
-        <li>
-          <a href="https://ppgte.ufc.br/pt/contatos/">Entre em contato</a>
-        </li>
-        <li>
-          <a href="#projetos">Teses e pesquisas</a>
-        </li>
-        <li>
-          <a href="https://instagram.com/ppgteufc?igshid=MzRlODBiNWFlZA==">Instagram</a>
-        </li>
+        <li><a href="https://ppgte.ufc.br/pt/">Sobre o PPGTE</a></li>
+        <li><a href="https://ppgte.ufc.br/pt/contatos/">Entre em contato</a></li>
+        <li><a href="#projetos">Teses e pesquisas</a></li>
+        <li><a href="https://instagram.com/ppgteufc?igshid=MzRlODBiNWFlZA==">Instagram</a></li>
       </ul>
+
       <p id="footer-copyright">PPGTE Copyright © 2023 Programa de Pós-Graduação em Tecnologia Educacional </p>
     </div>
   </footer>
-  <!-- Footer -->
+
+  <!-- < Footer-->
 </body>
 
 </html>
