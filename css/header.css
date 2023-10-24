@@ -17,8 +17,9 @@
   background: #f4f6fa;
 }
 
-#logo-site { /*Precisa ser mudado para a logo*/
-  color: #4c4c4c; 
+#logo-site {
+  height: 30px;
+  padding: 0 10px;
 }
 
 .header-menu { /*Menu de opções do header*/

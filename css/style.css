@@ -44,17 +44,3 @@ h6{
   line-height: 1.125rem;
   font-weight: 400;
 }
-/* AJEITAR
-.button-link-info {
-  display: inline-flex;
-  padding: 16px 40px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  background: #0f0f0f;
-}
-*/
