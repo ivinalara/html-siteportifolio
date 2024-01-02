@@ -62,6 +62,9 @@
   align-items: end;
   padding: 28px;
 }
+.projetos-card:hover {
+  background: #fcfdff00;
+}
 
 .projetos-card img {
   border-radius: 5px;
@@ -80,21 +83,22 @@
   color: #585e68;
   grid-column: 2/-1;
   grid-row: 2/3;
+  font-size: 16px;
 }
 
 .projetos-card h5 {
   color: #585e68;
   grid-column: 2/-1;
   grid-row: 3/4;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: bold;
 }
 
 .card-resumo {
   color: #585e68;
   grid-column: 1/-1;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
   font-weight: normal;
 }

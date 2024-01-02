@@ -12,8 +12,8 @@
 
 /* Estilos para a imagem de background */
 .background-image img {
-  height: 85%;
-  width: 85%;
+  height: 90%;
+  width: 100%;
   padding-left: 20%;
   z-index: 1; /* Coloca a imagem da direita sobre a imagem da esquerda */
 }
@@ -25,7 +25,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #1f232b;
-  padding: 20px; /*AJEITAR PADDING*/
+  padding: 40px; /*AJEITAR PADDING*/
+  padding-right: 20px;
+  background: #ff000000;
   text-align: left;
   max-height: 100%;
   overflow: hidden; /* Garante que o overflow seja oculto para não exibir partes da imagem da direita que ficam fora do contêiner */
@@ -33,7 +35,7 @@
 }
 
 /* Estilos para as sessões de texto */
-.section { /*margin*/
+.section { /*margin bottom do título*/
   margin-bottom: 20px;
 }
 .blue-text { /*blue-txt*/
@@ -45,7 +47,7 @@
   font-weight:normal;
   display: inline-block;
   padding: 16px 40px;
-  margin-top: 20px;
+  margin-top: 32px;
   background-color: #006FE5;
   color: white;
   text-decoration: none;
@@ -53,7 +55,7 @@
   text-transform: uppercase;
 }
 .button:hover {
-  background-color: #065FBF;
+  background-color: #1B54E6;
 }
 /* Estilos para o elemento da direita */
 .right-element {
