@@ -82,7 +82,7 @@
 .galeria-small-img img:hover {
   opacity: 1;
 }
-.perfil-grid {
+.responsavel-grid {
   grid-column: 2/-1;
   display: flex;
   align-items: center;
@@ -95,22 +95,36 @@
   max-height: 70px;
 }
 
-.perfil-grid {
+/* .perfil-grid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 70px 1fr;
   column-gap: 32px;
   row-gap: 20px;
+} */
+
+.responsavel-grid{
+  display: inline-flex;
+  padding: 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .img-perfil{
   grid-column: 1/2;
-  place-self: center;
 }
 
 .h2-perfil{
   grid-column: 2/-1;
   display: contents;
+}
+
+.responsavel-perfil{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
 }
 
 .p-perfil {
