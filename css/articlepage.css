@@ -73,19 +73,23 @@ footer{
   padding: 20px 20px;
 }
 .galeria-big-img img {
-  width: 630px;
-  height: 600px;
+  width: fit-content;
+  height: fit-content;
   object-fit: cover;
 }
 
 .galeria-small-img img {
-  height: 70px;
+  /*Gambiarra? Esse min-max igual é necessário pra que as fotos em pé fiquem do tamanho da foto deitada, 
+  dando uma aparência de quadrado. Deve ter uma maneira melhor de fazer isso.*/
+  min-height: 75px;
+  max-height: 75px;
   margin: 20px 0;
   cursor: pointer;
   display: block;
   opacity: 0.5;
 
-  width: 70px;
+  min-width: 75px;
+  max-width: 75px;
   object-fit: cover;
 }
 .galeria-small-img img:hover {
@@ -141,9 +145,11 @@ footer{
   grid-column-end: 4;
 }
 
+/*Dispositivos móveis*/
+
 @media only screen and (max-width:912px){
   .container{
-    max-width: 1200px;
+    max-width: 912px;
     margin: 0 auto;
     padding: 48px 32px;
     display: grid;
@@ -157,12 +163,31 @@ footer{
     'midias'
     'responsavel'
   }
-
+  
+  /*Essas duas classes precisam ter o grid-column removido pra funcionar no mobile*/
   .midias{
     grid-area: midias;
   }
 
   .responsavel-grid {
     grid-area: responsavel;
+  }
+
+  /*Ajustes na galeria*/
+  .galeria-small-img img {
+    min-height: 75px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.5;
+  
+    min-width: 75px;
+    object-fit: cover;
+  }
+
+  .galeria-big-img img {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
   }
 }
