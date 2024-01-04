@@ -15,7 +15,7 @@ h1{
 }
 
 h2{
-  font-size: 1.5;
+  font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 800;
 }
@@ -43,4 +43,20 @@ h6{
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-weight: 400;
+}
+
+@media only screen and (max-width:600px){
+  h1{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 800;
+  }
+  h2{
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  p,a{
+    font-size: 0.875rem;
+  }
+
 }

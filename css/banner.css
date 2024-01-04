@@ -55,3 +55,9 @@
   border-radius: 30px;
   border: 2px solid #f4f6fa85;
 }
+
+@media only screen and (max-width:600px){
+  .banner-conteudo p {
+    font-size: 1.1rem;
+  }
+}
