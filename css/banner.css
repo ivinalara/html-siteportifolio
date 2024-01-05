@@ -40,7 +40,7 @@
 }
 
 .button-link-banner:hover {
-  background: #2260FF30;
+  background: #2260ff30;
   border: 2px solid #f4f6fa;
 }
 
@@ -56,8 +56,18 @@
   border: 2px solid #f4f6fa85;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .banner-conteudo p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+  #slogan-lbreak {
+    display: none;
+  }
+  .banner-bg {
+    height: 380px;
+  }
+  .button-link-banner {
+    font-size: 0.9rem;
+    padding: 14px 40px;
   }
 }

@@ -83,22 +83,29 @@
   color: #585e68;
   grid-column: 2/-1;
   grid-row: 2/3;
-  font-size: 16px;
 }
 
 .projetos-card h5 {
   color: #585e68;
   grid-column: 2/-1;
   grid-row: 3/4;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: bold;
 }
 
 .card-resumo {
   color: #585e68;
   grid-column: 1/-1;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: normal;
+}
+
+@media (max-width: 850px) {
+  .projetos-box {
+    display: block;
+  }
+  .projetos-card {
+    margin-bottom: 0.5rem;
+    padding: 5.5%;
+  }
+  .projetos-card img {
+    width: 80%;
+    height: 80%;
+  }
 }
