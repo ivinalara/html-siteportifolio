@@ -44,6 +44,7 @@
   align-content: center;
   margin: 0 auto;
   color: #1f232b;
+  margin-top: 40px;
 }
 .info-ppgte-grid h4 {
   padding-bottom: 1.5rem;
@@ -63,7 +64,32 @@
   padding-bottom: 1.5rem;
 }
 
-.info-ppgte-box p {
-  line-height: 28px;
+
+
+#link-site-ppgte{
+  text-decoration: underline;
 }
 
+#link-site-ppgte:hover {
+  color: #0C2669;
+}
+
+@media only screen and (max-width:760px){
+  .info-ppgte-grid {
+    grid-template-columns: none;
+  }
+  .info-ppgte-icone {
+    width: 50px
+  }
+  .info-ppgte-box img {
+    padding-bottom: 1rem;
+  }
+  .info-ppgte-grid h4 {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 460px) {
+  .info-ppgte {
+    padding: 0px 24px;
+  }
+}

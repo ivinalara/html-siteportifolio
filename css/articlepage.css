@@ -1,0 +1,203 @@
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+.pdf-download{
+  grid-area: pdf-download;
+  text-align: center;
+}
+.info{
+  grid-area: info;
+}
+
+.midias{
+  grid-area: midias;
+  grid-column: 2/-1;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 60px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'main main main'
+  'pdf-download info info'
+  'midias midias midias'
+  'responsavel responsavel responsavel'
+}
+
+
+.container img.capa {
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 50, 0.09);
+}
+
+.container a {
+  /*botão de baixar PDF*/
+  padding: 16px 32px;
+}
+
+/*--- IMAGENS ---*/
+
+.galeria {
+  display: flex;
+  align-items: center;
+}
+.galeria {
+  /*conteiner*/
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 0.5rem;
+  align-items: start;
+  background: #ffffff50;
+  border: 1px solid #e1e6f0;
+}
+.galeria img {
+  border: 1px solid #e1e6f0;
+}
+
+.galeria-big-img {
+  /*Container display da imagem maior em destaque*/
+  padding: 20px 20px;
+}
+.galeria-big-img img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.galeria-small-img img {
+  /*Gambiarra? Esse min-max igual é necessário pra que as fotos em pé fiquem do tamanho da foto deitada, 
+  dando uma aparência de quadrado. Deve ter uma maneira melhor de fazer isso.*/
+  min-height: 75px;
+  max-height: 75px;
+  margin: 20px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.5;
+
+  min-width: 75px;
+  max-width: 75px;
+  object-fit: cover;
+}
+.galeria-small-img img:hover {
+  opacity: 1;
+}
+
+.responsavel-grid {
+  grid-area: responsavel;
+  grid-column: 2/-1;
+}
+
+.img-perfil {
+  border-radius: 50%; /*img redonda*/
+  border: 2px solid #6B91F0;
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.responsavel-grid{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.img-perfil{
+  grid-column: 1/2;
+}
+
+.h2-perfil{
+  grid-column: 2/-1;
+  display: contents;
+}
+
+.responsavel-perfil{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.p-perfil {
+  grid-column: 1/-1;
+  grid-row: 3;
+  place-self: start;
+}
+
+.linha-perfil {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+
+/*Dispositivos móveis*/
+
+@media only screen and (max-width:912px){
+  .container{
+    max-width: 912px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'main'
+    'pdf-download'
+    'info'
+    'midias'
+    'responsavel'
+  }
+  .capa {
+    width: 70%;
+    margin: 0px 50px;
+    display: inline-block;
+  }
+  
+  /*Essas duas classes precisam ter o grid-column removido pra funcionar no mobile*/
+  .midias{
+    grid-area: midias;
+  }
+
+  .responsavel-grid {
+    grid-area: responsavel;
+  }
+
+  /*Ajustes na galeria*/
+  .galeria-small-img img {
+    min-height: 75px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.5;
+  
+    min-width: 75px;
+    object-fit: cover;
+  }
+
+  .galeria-big-img img {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+  }
+}
+@media (max-width: 600px) {
+  .container{
+    padding: 48px 24px;
+  }
+}
