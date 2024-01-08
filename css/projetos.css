@@ -109,3 +109,8 @@
     height: 80%;
   }
 }
+@media (max-width: 600px) {
+  .projetos-teses {
+    padding: 44px 24px;
+  }
+}

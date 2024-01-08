@@ -52,15 +52,16 @@
 
 /*Responsividade*/
 @media (max-width: 800px) {
-  .header {
+  .header { /* ajustes do menu de navegação*/
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 16px 20px 8px 20px;
   }
   .header-menu a {
     border: 1px solid #e1e7f0;
-    padding: 12px 16px;
+    padding: 10px 16px;
     border-radius: 3px;
+    font-size: 0.85rem;
   }
   .header-menu a::after {
     display: none;

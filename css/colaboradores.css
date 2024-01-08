@@ -28,11 +28,20 @@
 }
 
 @media (max-width: 400px) {
+  .colaborador {
+    padding: 24px 24px;
+  }
   .colaborador-container {
     justify-content: flex-center;
     flex-direction: column;
   }
   .colaborador-image {
     width:60%;
+  }
+}
+@media (max-width: 600px) {
+  .colaborador {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }

@@ -102,3 +102,8 @@ text-decoration: underline;
     color: #e3e7ed;
   }
 }
+@media (max-width: 600px) {
+  .footer-info {
+    padding: 40px 24px 8px 24px;
+  }
+}

@@ -88,3 +88,8 @@
     padding-bottom: 1rem;
   }
 }
+@media (max-width: 460px) {
+  .info-ppgte {
+    padding: 0px 24px;
+  }
+}

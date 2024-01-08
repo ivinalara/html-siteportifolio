@@ -86,3 +86,8 @@
     gap: 2vh;
   }
 }
+@media (max-width: 600px) {
+  .overlay-container {
+    padding: 0px 24px;
+  }
+}

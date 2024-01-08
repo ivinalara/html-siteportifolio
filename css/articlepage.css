@@ -163,6 +163,11 @@ footer{
     'midias'
     'responsavel'
   }
+  .capa {
+    width: 70%;
+    margin: 0px 50px;
+    display: inline-block;
+  }
   
   /*Essas duas classes precisam ter o grid-column removido pra funcionar no mobile*/
   .midias{
@@ -189,5 +194,10 @@ footer{
     width: fit-content;
     height: fit-content;
     object-fit: cover;
+  }
+}
+@media (max-width: 600px) {
+  .container{
+    padding: 48px 24px;
   }
 }
