@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Portal dos Egressos PPGTE</title>
+  <script type="text/javascript" src="./script.js" defer></script>
+</head>
+
+
+<body>
+
+  <header id="inicio" class="header-bg">
+    <div class="header">
+      <a href="./index.html" id="logo-site"><img id="logo-site" src="./img/logo/logo-portaldosegressos1.png" alt="Portal dos Egressos PPGTE"></a>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="container-form">
+      <h1>Cadastre um novo projeto</h1>
+      <form action="">
+        <label for="title-form">Título do projeto:</label>
+        <input type="text" id="title-form" name="title-form">
+
+        <label for="autor-form">Nome do autor:</label>
+        <input type="text" id="autor-form" name="autor-form">
+
+        <label for="orientador-form">Nome do Orientador:</label>
+        <input type="text" id="orientador-form" name="orientador-form">
+
+        <label for="date-form">Data de publicação:</label>
+        <input type="date" id="date-form" name="date-form">
+
+        <label for="resume-form">Resumo do projeto:</label>
+        <textarea id="resume-form" name="resume-form" rows="10"></textarea>
+
+        <label for="keyworks-form">Palavras-chaves:</label>
+        <input type="text" id="keyworks-form" name="keyworks-form">
+
+        <label for="midia-form">Mídias:</label>
+        <input type="file" id="midia-form" name="midia-form" accept="image/*,video/*" multiple> 
+
+        <label for="pdf-form">Arquivo PDF do projeto:</label>
+        <input type="file" id="pdf-form" name="pdf-form" accept=".pdf">
+
+        <label for="avatar-form">Foto do autor:</label>
+        <input type="file" id="avatar-form" name="avatar-form" accept="image/*">
+
+        <label for="about-form">Texto sobre o autor:</label>
+        <textarea id="about-form" name="about-form" rows="5"></textarea>
+
+        <button class="form-button">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Footer > -->
+  <footer>
+    <footer class="footer" id="contatos">
+      <div class="footer-info">
+        <h4 id="footer-titulo-1">PPGTE</h4>
+        <p id="footer-descricao">Nosso programa de mestrado oferece as ferramentas e conhecimentos necessários para integrar as tecnologias contemporâneas no ensino e aprendizagem, capacitando você a enfrentar desafios educacionais com soluções inovadoras. <a href="https://ppgte.ufc.br/pt/">Saiba mais no nosso site ></a></p>
+
+        <h4>Conheça mais</h4>
+        <ul>
+          <li><a href="https://ppgte.ufc.br/pt/sobre-o-ppgte/">Sobre o PPGTE</a></li>
+          <li><a href="https://ppgte.ufc.br/pt/contatos/">Entre em contato</a></li>
+          <li><a href="./index.html#projetos">Egressos</a></li>
+          <li><a href="https://instagram.com/ppgteufc?igshid=MzRlODBiNWFlZA==">Instagram</a></li>
+        </ul>
+
+        <p id="footer-copyright">PPGTE Copyright © 2023 Programa de Pós-Graduação em Tecnologia Educacional </p>
+      </div>
+    </footer>
+  </footer>
+  <!-- < Footer -->
+
+</body>
+
+</html>
