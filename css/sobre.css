@@ -1,5 +1,7 @@
 /* Estilos para o container de sobreposição */
 .overlay-container {
+  max-width: 1200px;
+  padding: 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,32 +10,26 @@
 /* Estilos para o elemento da esquerda */
 .left-element {
   position: relative;
+  max-width: fit-content;
+
+  /*Glasmorfismo*/
+  border-radius: 24px;
+  background: radial-gradient(66.11% 51.96% at 5.27% 100%, rgba(34, 96, 255, 0.30) 0%, rgba(34, 96, 255, 0.26) 15.9%, rgba(34, 96, 255, 0.00) 100%, rgba(34, 96, 255, 0.00) 100%), radial-gradient(63.26% 53.87% at 96.66% 10.13%, rgba(34, 96, 255, 0.35) 10.58%, rgba(34, 96, 255, 0.26) 37.05%, rgba(34, 96, 255, 0.00) 82.96%), #FFF;
+  filter: drop-shadow(0px 4.213px 31.596px rgba(0, 26, 117, 0.15));
+}
+
+.text-wrapper{
+  padding: 8vh;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
 }
 
 /* Estilos para a imagem de background */
-.background-image img {
-  height: 85%;
-  width: 85%;
-  padding-left: 20%;
-  z-index: 1; /* Coloca a imagem da direita sobre a imagem da esquerda */
-}
 
-/* Estilos para o texto sobreposto */
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #1f232b;
-  padding: 20px; /*AJEITAR PADDING*/
-  text-align: left;
-  max-height: 100%;
-  overflow: hidden; /* Garante que o overflow seja oculto para não exibir partes da imagem da direita que ficam fora do contêiner */
-
-}
 
 /* Estilos para as sessões de texto */
-.section { /*margin*/
+.section { /*margin bottom do título*/
   margin-bottom: 20px;
 }
 .blue-text { /*blue-txt*/
@@ -44,12 +40,16 @@
 .button {
   font-weight:normal;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 16px 40px;
+  margin-top: 32px;
+  background-color: #006FE5;
   color: white;
   text-decoration: none;
   border-radius: 30px;
   text-transform: uppercase;
+}
+.button:hover {
+  background-color: #1B54E6;
 }
 /* Estilos para o elemento da direita */
 .right-element {
@@ -62,9 +62,32 @@
 .right-element img {
   width: 100%; /* Largura da imagem */
   height: auto;
-  z-index: 2; /* Coloca a imagem da direita sobre a imagem da esquerda */
+  z-index: 1; /* Coloca a imagem da direita sobre a imagem da esquerda */
 }
 .textBlock {
   overflow:hidden;
+}
 
+#titulo-sobre-portal{
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 912px) {
+  .overlay-container {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-wrapper{
+    padding: 2vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+  }
+}
+@media (max-width: 600px) {
+  .overlay-container {
+    padding: 0px 24px;
+  }
 }

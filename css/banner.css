@@ -40,8 +40,8 @@
 }
 
 .button-link-banner:hover {
-  background: #e2faff15;
-  border: 3px solid #f4f6fa;
+  background: #2260ff30;
+  border: 2px solid #f4f6fa;
 }
 
 .button-link-banner {
@@ -53,5 +53,24 @@
   color: #f4f6fa;
   text-decoration: none;
   border-radius: 30px;
-  border: 3px solid #f4f6fa85;
+  border: 2px solid #f4f6fa85;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-container {
+    padding: 0px 24px;
+  }
+  .banner-conteudo p {
+    font-size: 1rem;
+  }
+  #slogan-lbreak {
+    display: none;
+  }
+  .banner-bg {
+    height: 380px;
+  }
+  .button-link-banner {
+    font-size: 0.9rem;
+    padding: 14px 40px;
+  }
 }

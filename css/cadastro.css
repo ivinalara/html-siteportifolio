@@ -1,0 +1,42 @@
+.container-form {
+  grid-column: 1/-1;
+}
+
+.container-form h1 {
+  margin-bottom: 28px;
+}
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+textarea,
+input {
+  font-size: 1.1rem;
+  width: 30rem;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #a8aeb6;
+  margin-bottom: 20px;
+}
+textarea,
+input[type="date" i] {
+  font-family: sans-serif;
+}
+
+input[type="file" i] {
+  border: none;
+}
+
+.form-button {
+  display: block;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #2260FF;
+  color: #fff;
+  cursor: pointer;
+}
