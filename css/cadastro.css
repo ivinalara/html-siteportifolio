@@ -1,10 +1,18 @@
 .container-form {
   grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-form h1 {
   margin-bottom: 28px;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
 label {
   display: block;
   font-weight: 700;
@@ -14,7 +22,7 @@ label {
 textarea,
 input {
   font-size: 1.1rem;
-  width: 30rem;
+  max-width: 30rem;
 
   padding: 10px;
   border-radius: 10px;
@@ -27,6 +35,7 @@ input[type="date" i] {
 }
 
 input[type="file" i] {
+  width: 100%;
   border: none;
 }
 
@@ -39,4 +48,17 @@ input[type="file" i] {
   background-color: #2260FF;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+
+  textarea,
+input {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #a8aeb6;
+  margin-bottom: 20px;
+}
+
 }
